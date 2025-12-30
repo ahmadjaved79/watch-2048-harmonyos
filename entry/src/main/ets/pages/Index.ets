@@ -267,7 +267,7 @@ struct Index {
           ForEach(this.grid, (value: number) => {
             GridItem() {
               Text(value === 0 ? '' : value.toString())
-                .fontSize(30)
+                .fontSize(25)
                 .fontWeight(FontWeight.Bold)
                 .textAlign(TextAlign.Center)
                 .width('100%')
@@ -275,14 +275,14 @@ struct Index {
                 .backgroundColor(value === 0 ? '#2A2A2A' : '#F5B301')
                 .borderRadius(16)
             }
-            .padding(5)
+            .padding(3)
           })
         }
         .columnsTemplate('1fr 1fr 1fr')
         .rowsTemplate('1fr 1fr 1fr')
-        .width(150)
-        .height(150)
-        .borderRadius(28)
+        .width(130)
+        .height(130)
+        .borderRadius(15)
       }
       .width('100%')
       .height('100%')
